@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,700,900&display=swap");
+@import "./colors.scss";
+
+html {
+	font-family: "Inter";
+	background-color: var(--gray-600);
+}
+
+.App {
+	margin-top: -28px;
+	padding-bottom: 40px;
+}
+
+._completed {
+	label {
+		text-decoration: line-through;
+		color: var(--gray-300);
+	}
+}
+
+.info-completed {
+	color: var(--purple-dark) !important;
+}
+
+._empty {
+	&::-webkit-input-placeholder::before {
+		content: "la la la";
+	}
+	&::placeholder {
+		color: rgba(255, 0, 0, 0.415) !important;
+	}
+	border: 1px solid rgba(255, 0, 0, 0.415) !important;
+}

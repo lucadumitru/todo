@@ -1,0 +1,21 @@
+@import "./../../../styles/colors.scss";
+
+.button {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.4;
+	border-radius: 8px;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 16px;
+	background-color: var(--blue-dark);
+	color: #fff;
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--blue);
+			transition: all 0.3s ease 0s;
+		}
+	}
+}

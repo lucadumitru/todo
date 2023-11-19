@@ -1,0 +1,39 @@
+@import "./../../../src/styles/colors.scss";
+
+.todo_items {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+	padding-top: 65px;
+	height: calc(100vh - 270px);
+	min-height: 400px;
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 12px;
+		overflow: auto;
+	}
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	color: var(--gray-200);
+	&__block {
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+	&__label {
+		font-size: 14px;
+		color: var(--blue);
+	}
+	&__quantity {
+		padding: 2px 8px;
+		font-size: 12px;
+		background-color: var(--gray-400);
+		border-radius: 999px;
+	}
+}

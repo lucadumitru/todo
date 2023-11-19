@@ -1,0 +1,17 @@
+@import "./../../../styles/colors";
+
+.logo {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	&__img {
+	}
+	&__text {
+		font-size: 40px;
+		color: var(--blue);
+		font-weight: 900;
+		span {
+			color: var(--purple-dark);
+		}
+	}
+}

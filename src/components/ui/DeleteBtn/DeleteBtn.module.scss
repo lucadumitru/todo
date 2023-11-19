@@ -1,0 +1,19 @@
+@import "./../../../styles/colors.scss";
+
+.deleteBtn {
+	max-height: 24px;
+	padding: 5px;
+	transition: all 0.3s ease 0s;
+	border-radius: 4px;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--gray-400);
+			transition: all 0.3s ease 0s;
+			svg {
+				path {
+					fill: var(--danger);
+				}
+			}
+		}
+	}
+}

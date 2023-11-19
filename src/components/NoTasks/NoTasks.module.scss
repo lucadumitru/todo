@@ -1,0 +1,27 @@
+@import "./../../styles/colors.scss";
+
+.no_tasks {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 64px 24px;
+	row-gap: 16px;
+	border-top: 1px solid var(--gray-300);
+	border-radius: 8px;
+	&__icon {
+	}
+	&__text {
+		text-align: center;
+		color: var(--gray-300);
+		p {
+			display: flex;
+			flex-direction: column;
+			font-weight: 700;
+			line-height: 1.4;
+			span {
+				font-weight: normal;
+			}
+		}
+	}
+}
